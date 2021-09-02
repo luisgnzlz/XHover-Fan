@@ -19,7 +19,7 @@ class MainViewController: UITabBarController {
             createNavController(for: ViewController(), title: "Home", image: UIImage(systemName: "house.fill")!),
             createNavController(for: UserInfoViewController(), title: "Account", image: UIImage(systemName: "person.fill")!)
         ]
-    UINavigationBar.appearance().prefersLargeTitles = true
+    //UINavigationBar.appearance().prefersLargeTitles = true
     }
 
 fileprivate func createNavController(for rootViewController: UIViewController,

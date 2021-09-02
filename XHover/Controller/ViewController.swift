@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let layoutProducts = UICollectionViewFlowLayout()
+    let productPage = ProductInfoViewController()
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     let logoImage = UIImageView()
     
@@ -85,6 +86,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: (view.frame.width)/2, height: 40)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedCell = collectionView.cellForItem(at: indexPath) as! ProductsCollectionViewCell
+        productPage.info.image.image = selectedCell.TopItemPicture.image
+        productPage.info.topLabel.text = selectedCell.itemInfo.text
+        productPage.info.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
+        present(productPage, animated: true, completion: nil)
     }
 
 }

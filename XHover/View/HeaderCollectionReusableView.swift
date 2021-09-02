@@ -24,7 +24,6 @@ class HeaderCollectionReusableView: UICollectionReusableView {
         headerLabel.layer.cornerRadius = 10
         headerLabel.layer.masksToBounds = true
         headerLabel.text = "  BEST SELLERS"
-        headerLabel.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         headerLabel.font = UIFont.boldSystemFont(ofSize: 22)
     }
     

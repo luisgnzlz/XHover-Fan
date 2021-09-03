@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1B6AFF26E1BF5100376CB8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */; };
+		AA1B6B0126E1C09A00376CB8 /* TipsAndAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */; };
+		AA1B6B0326E1C22D00376CB8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */; };
 		AA1BC9E326BE3333005AC362 /* listArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BC9E226BE3333005AC362 /* listArrays.swift */; };
 		AA2CDC4126BA3542008DE89D /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDC4026BA3542008DE89D /* UIViewHelper.swift */; };
 		AA3488CE2672FFFB00F317C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3488CD2672FFFB00F317C1 /* AppDelegate.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsAndAdviceViewController.swift; sourceTree = "<group>"; };
+		AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		AA1BC9E226BE3333005AC362 /* listArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listArrays.swift; sourceTree = "<group>"; };
 		AA2CDC4026BA3542008DE89D /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		AA3488CA2672FFFB00F317C1 /* XHover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +178,9 @@
 				AAFF955826D7FFF7003D3E48 /* MainViewController.swift */,
 				AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */,
 				AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */,
+				AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */,
+				AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */,
+				AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,7 +322,10 @@
 				AAF27CD226E12F5C00AFA62D /* UserInfoViewController.swift in Sources */,
 				AAF27CD626E1520100AFA62D /* ProdInfo.swift in Sources */,
 				AA3488CE2672FFFB00F317C1 /* AppDelegate.swift in Sources */,
+				AA1B6AFF26E1BF5100376CB8 /* MapViewController.swift in Sources */,
 				AA485A1D26BCB546009B382A /* HeaderCollectionReusableView.swift in Sources */,
+				AA1B6B0126E1C09A00376CB8 /* TipsAndAdviceViewController.swift in Sources */,
+				AA1B6B0326E1C22D00376CB8 /* VideosViewController.swift in Sources */,
 				AA3488D02672FFFB00F317C1 /* SceneDelegate.swift in Sources */,
 				AAF27CD426E151B400AFA62D /* ProductInfoViewController.swift in Sources */,
 				AAFF955926D7FFF7003D3E48 /* MainViewController.swift in Sources */,

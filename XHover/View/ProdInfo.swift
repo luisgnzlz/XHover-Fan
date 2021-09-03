@@ -74,3 +74,4 @@ class ProdInfo: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

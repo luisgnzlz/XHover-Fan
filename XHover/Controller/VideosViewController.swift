@@ -1,5 +1,5 @@
 //
-//  UserInfoViewController.swift
+//  VideosViewController.swift
 //  XHover
 //
 //  Created by Luis Gonzalez on 9/2/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserInfoViewController: UIViewController {
+class VideosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

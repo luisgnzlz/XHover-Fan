@@ -9,10 +9,23 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
 
+    let userView = UserInfo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        constrain()
+    }
+    
+    func constrain() {
+        view.addConstrainedSubviews(userView)
+        
+        NSLayoutConstraint.activate([
+        
+            userView.topAnchor.constraint(equalTo: view.topAnchor),
+            userView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            userView.widthAnchor.constraint(equalTo: view.widthAnchor),
+        ])
     }
     
 }

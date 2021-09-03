@@ -26,6 +26,7 @@ class ProductsCollectionViewCell: UICollectionViewCell {
         itemInfo.font = UIFont.systemFont(ofSize: 12)
         itemInfo.lineBreakMode = .byWordWrapping
         itemInfo.numberOfLines = 2
+        itemInfo.textColor = .black
         
         priceForItem.text = ""
         priceForItem.font = UIFont.boldSystemFont(ofSize: 14)

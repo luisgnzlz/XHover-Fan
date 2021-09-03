@@ -23,17 +23,21 @@ class MainViewController: UITabBarController {
             createNavController(for: UserInfoViewController(), title: "Account", image: UIImage(systemName: "person.fill")!),
         ]
     //UINavigationBar.appearance().prefersLargeTitles = true
+        UINavigationBar.appearance().barTintColor = .white
     }
 
 fileprivate func createNavController(for rootViewController: UIViewController,
                                                   title: String,
                                                   image: UIImage) -> UINavigationController {
     let navController = UINavigationController(rootViewController: rootViewController)
-    
+    image.withTintColor(UIColor.white)
     if title == "Home" {
-        rootViewController.navigationItem.title = "Shop"
+        rootViewController.navigationItem.title = nil
         rootViewController.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bag.fill"), style: .plain, target: self, action: #selector(shoppingCart))
+        rootViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logo"), style: .plain, target: self, action: #selector(shoppingCart))
+        //rootViewController.navigationItem.titleView = 
         rootViewController.navigationItem.rightBarButtonItem?.tintColor = .black
+        rootViewController.navigationItem.leftBarButtonItem?.tintColor = .black
     } else {
     rootViewController.navigationItem.title = title
     }

@@ -13,6 +13,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let productPage = ProductInfoViewController()
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     let logoImage = UIImageView()
+    var count = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func setUpView() {
         
-        logoImage.image = UIImage(named: "logo")
-        logoImage.contentMode = .scaleAspectFit
+        //logoImage.image = UIImage(named: "logo")
+        //logoImage.contentMode = .scaleAspectFit
         
         layoutProducts.itemSize = CGSize(width: (view.frame.width-22)/2, height: view.frame.height/5)
         layoutProducts.minimumLineSpacing = 1
@@ -40,12 +41,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         view.addConstrainedSubviews(collectionView, logoImage)
 
         NSLayoutConstraint.activate([
-            
-            logoImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            logoImage.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2),
-            logoImage.heightAnchor.constraint(equalToConstant: 50),
            
-            collectionView.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 10),
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             collectionView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -20),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80),
             collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -54,11 +51,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+            return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -79,6 +76,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         if indexPath.section == 1 {
             header.headerLabel.text = "  New Products"
+        } else if indexPath.section == 2 {
+            header.headerLabel.text = " All Products"
         }
         
         return header

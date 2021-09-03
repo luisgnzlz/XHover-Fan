@@ -17,7 +17,10 @@ class MainViewController: UITabBarController {
     func setUpVC() {
         viewControllers = [
             createNavController(for: ViewController(), title: "Home", image: UIImage(systemName: "house.fill")!),
-            createNavController(for: UserInfoViewController(), title: "Account", image: UIImage(systemName: "person.fill")!)
+            createNavController(for: MapViewController(), title: "Map", image: UIImage(systemName: "map.fill")!),
+            createNavController(for: VideosViewController(), title: "Videos", image: UIImage(systemName: "tv.fill")!),
+            createNavController(for: TipsAndAdviceViewController(), title: "Tips", image: UIImage(systemName: "lightbulb.fill")!),
+            createNavController(for: UserInfoViewController(), title: "Account", image: UIImage(systemName: "person.fill")!),
         ]
     //UINavigationBar.appearance().prefersLargeTitles = true
     }

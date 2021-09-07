@@ -11,6 +11,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     let layoutProducts = UICollectionViewFlowLayout()
     let productPage = ProductInfoViewController()
+    let scrollItemInfo = ItemInfoScrollView()
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     let logoImage = UIImageView()
     var count = 0
@@ -61,10 +62,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! ProductsCollectionViewCell
         
-        if indexPath.section == 0 {
             collectionCell.TopItemPicture.image = UIImage(named: "frame\(indexPath.row+1)")
             collectionCell.itemInfo.text = "\(topSellerList[indexPath.row])"
-        }
         
         return collectionCell
     }
@@ -89,10 +88,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ProductsCollectionViewCell
-        productPage.info.image.image = selectedCell.TopItemPicture.image
+        productPage.scrollInfo.holder.image.image = selectedCell.TopItemPicture.image
         productPage.info.topLabel.text = selectedCell.itemInfo.text
-        productPage.info.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
-        present(productPage, animated: true, completion: nil)
+        productPage.scrollInfo.holder.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
+        present(TesterViewController(), animated: true, completion: nil)
     }
 
 }

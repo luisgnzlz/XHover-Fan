@@ -46,7 +46,7 @@ fileprivate func createNavController(for rootViewController: UIViewController,
         //rootViewController.navigationItem.title = title
         rootViewController.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gearshape.fill"), style: .plain, target: self, action: #selector(shoppingCart))
         rootViewController.navigationItem.rightBarButtonItem?.tintColor = .black
-        rootViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "\(title)", style: .done, target: nil, action: nil)
+        rootViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Profile", style: .done, target: nil, action: nil)
         rootViewController.navigationItem.leftBarButtonItem?.setTitleTextAttributes(attrs, for: .normal)
         rootViewController.navigationItem.leftBarButtonItem?.tintColor = .black
     } else {

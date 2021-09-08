@@ -10,7 +10,8 @@ import UIKit
 class ProductInfoViewController: UIViewController {
 
     let info = ProdInfo()
-    let scrollInfo = ItemInfoScrollView()
+    let discrip = InfoProd()
+    let scroll = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,18 +20,23 @@ class ProductInfoViewController: UIViewController {
     }
     
     func constrain() {
-        view.addConstrainedSubviews(info, scrollInfo)
-        
+        view.addConstrainedSubviews(info, scroll)
+        scroll.addConstrainedSubviews(discrip)
         NSLayoutConstraint.activate([
             
             info.topAnchor.constraint(equalTo: view.topAnchor),
             info.widthAnchor.constraint(equalTo: view.widthAnchor),
             info.heightAnchor.constraint(equalToConstant: 150),
             
-            scrollInfo.topAnchor.constraint(equalTo: info.bottomAnchor),
-            scrollInfo.widthAnchor.constraint(equalTo: view.widthAnchor),
-            scrollInfo.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            scrollInfo.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            scroll.topAnchor.constraint(equalTo: info.bottomAnchor),
+            scroll.widthAnchor.constraint(equalTo: view.widthAnchor),
+            scroll.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scroll.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            discrip.topAnchor.constraint(equalTo: scroll.topAnchor),
+            discrip.widthAnchor.constraint(equalTo: scroll.widthAnchor),
+            discrip.centerXAnchor.constraint(equalTo: scroll.centerXAnchor),
+            discrip.bottomAnchor.constraint(equalTo: scroll.bottomAnchor),
         ])
         
     }

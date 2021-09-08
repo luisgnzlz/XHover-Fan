@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let layoutProducts = UICollectionViewFlowLayout()
     let productPage = ProductInfoViewController()
     let scrollItemInfo = ItemInfoScrollView()
+    let testing = TesterViewController()
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     let logoImage = UIImageView()
     var count = 0
@@ -88,11 +89,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ProductsCollectionViewCell
-        productPage.scrollInfo.holder.image.image = selectedCell.TopItemPicture.image
+        productPage.discrip.image.image = selectedCell.TopItemPicture.image
         productPage.info.topLabel.text = selectedCell.itemInfo.text
-        productPage.scrollInfo.holder.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
-        present(TesterViewController(), animated: true, completion: nil)
+        productPage.discrip.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
+        present(productPage, animated: true, completion: nil)
     }
 
 }
-

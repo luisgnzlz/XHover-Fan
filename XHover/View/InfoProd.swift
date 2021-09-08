@@ -44,7 +44,7 @@ class InfoProd: ProgammaticView {
             
             buyButton.topAnchor.constraint(equalTo: prodLabel.bottomAnchor, constant: 50),
             buyButton.widthAnchor.constraint(equalToConstant: 150),
-            buyButton.heightAnchor.constraint(equalToConstant: 50),
+            buyButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             buyButton.centerXAnchor.constraint(equalTo: centerXAnchor),
         
         ])

@@ -12,7 +12,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let layoutProducts = UICollectionViewFlowLayout()
     let productPage = ProductInfoViewController()
     let scrollItemInfo = ItemInfoScrollView()
-    let testing = TesterViewController()
     var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout.init())
     let logoImage = UIImageView()
     var count = 0

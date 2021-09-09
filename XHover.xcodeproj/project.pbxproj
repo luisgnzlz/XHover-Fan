@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA0298E026E918C00008F62C /* testerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0298DF26E918C00008F62C /* testerView.swift */; };
 		AA1B6AFF26E1BF5100376CB8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */; };
 		AA1B6B0126E1C09A00376CB8 /* TipsAndAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */; };
 		AA1B6B0326E1C22D00376CB8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */; };
@@ -27,9 +26,9 @@
 		AA8454DB26E2922C00719948 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8454DA26E2922C00719948 /* Launch Screen.storyboard */; };
 		AA8454DD26E294A800719948 /* TipAndAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8454DC26E294A800719948 /* TipAndAdvice.swift */; };
 		AAD3BFCB26E7C68C00B3F2CD /* ItemInfoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFCA26E7C68C00B3F2CD /* ItemInfoScrollView.swift */; };
-		AAD3BFCD26E7CCFD00B3F2CD /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFCC26E7CCFD00B3F2CD /* TesterViewController.swift */; };
 		AAD3BFCF26E7D0F500B3F2CD /* InfoProd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFCE26E7D0F500B3F2CD /* InfoProd.swift */; };
 		AAD3BFD126E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFD026E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift */; };
+		AAD64CA926E93AE400311F93 /* TipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD64CA826E93AE400311F93 /* TipsList.swift */; };
 		AAEB432526BB421300F390AB /* blaster3_2048x2048.gif in Resources */ = {isa = PBXBuildFile; fileRef = AAEB432426BB421300F390AB /* blaster3_2048x2048.gif */; };
 		AAF27CD226E12F5C00AFA62D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */; };
 		AAF27CD426E151B400AFA62D /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */; };
@@ -55,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA0298DF26E918C00008F62C /* testerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testerView.swift; sourceTree = "<group>"; };
 		AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsAndAdviceViewController.swift; sourceTree = "<group>"; };
 		AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
@@ -81,9 +79,9 @@
 		AA8454DA26E2922C00719948 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AA8454DC26E294A800719948 /* TipAndAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipAndAdvice.swift; sourceTree = "<group>"; };
 		AAD3BFCA26E7C68C00B3F2CD /* ItemInfoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoScrollView.swift; sourceTree = "<group>"; };
-		AAD3BFCC26E7CCFD00B3F2CD /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
 		AAD3BFCE26E7D0F500B3F2CD /* InfoProd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProd.swift; sourceTree = "<group>"; };
 		AAD3BFD026E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPurchasedCollectionViewCell.swift; sourceTree = "<group>"; };
+		AAD64CA826E93AE400311F93 /* TipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsList.swift; sourceTree = "<group>"; };
 		AAEB432426BB421300F390AB /* blaster3_2048x2048.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = blaster3_2048x2048.gif; path = Assets.xcassets/frameBackground.dataset/blaster3_2048x2048.gif; sourceTree = "<group>"; };
 		AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
@@ -183,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				AA8454D626E28B9400719948 /* ProgammaticView.swift */,
-				AA6E812D26B9FC570055FA33 /* ProductsCollectionViewCell.swift */,
 				AA2CDC4026BA3542008DE89D /* UIViewHelper.swift */,
+				AA6E812D26B9FC570055FA33 /* ProductsCollectionViewCell.swift */,
 				AA485A1C26BCB546009B382A /* HeaderCollectionReusableView.swift */,
 				AAF27CD526E1520100AFA62D /* ProdInfo.swift */,
 				AA8454D426E28B6300719948 /* UserInfo.swift */,
@@ -192,7 +190,7 @@
 				AAD3BFCA26E7C68C00B3F2CD /* ItemInfoScrollView.swift */,
 				AAD3BFCE26E7D0F500B3F2CD /* InfoProd.swift */,
 				AAD3BFD026E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift */,
-				AA0298DF26E918C00008F62C /* testerView.swift */,
+				AAD64CA826E93AE400311F93 /* TipsList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,7 +202,6 @@
 				AAFF955826D7FFF7003D3E48 /* MainViewController.swift */,
 				AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */,
 				AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */,
-				AAD3BFCC26E7CCFD00B3F2CD /* TesterViewController.swift */,
 				AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */,
 				AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */,
 				AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */,
@@ -346,6 +343,7 @@
 				AA2CDC4126BA3542008DE89D /* UIViewHelper.swift in Sources */,
 				AA8454DD26E294A800719948 /* TipAndAdvice.swift in Sources */,
 				AA6E812E26B9FC570055FA33 /* ProductsCollectionViewCell.swift in Sources */,
+				AAD64CA926E93AE400311F93 /* TipsList.swift in Sources */,
 				AA3488D22672FFFB00F317C1 /* ViewController.swift in Sources */,
 				AA1BC9E326BE3333005AC362 /* listArrays.swift in Sources */,
 				AAF27CD226E12F5C00AFA62D /* UserInfoViewController.swift in Sources */,
@@ -360,11 +358,9 @@
 				AA3488D02672FFFB00F317C1 /* SceneDelegate.swift in Sources */,
 				AAF27CD426E151B400AFA62D /* ProductInfoViewController.swift in Sources */,
 				AA8454D526E28B6300719948 /* UserInfo.swift in Sources */,
-				AA0298E026E918C00008F62C /* testerView.swift in Sources */,
 				AAFF955926D7FFF7003D3E48 /* MainViewController.swift in Sources */,
 				AAD3BFCB26E7C68C00B3F2CD /* ItemInfoScrollView.swift in Sources */,
 				AA8454D726E28B9500719948 /* ProgammaticView.swift in Sources */,
-				AAD3BFCD26E7CCFD00B3F2CD /* TesterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

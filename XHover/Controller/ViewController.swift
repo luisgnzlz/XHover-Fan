@@ -63,6 +63,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! ProductsCollectionViewCell
         
             collectionCell.TopItemPicture.image = UIImage(named: "frame\(indexPath.row+1)")
+        collectionCell.priceForItem.text = "$150"
             collectionCell.itemInfo.text = "\(topSellerList[indexPath.row])"
         
         return collectionCell
@@ -89,6 +90,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! ProductsCollectionViewCell
         productPage.discrip.image.image = selectedCell.TopItemPicture.image
+        productPage.info.price.text = selectedCell.priceForItem.text
         productPage.info.topLabel.text = selectedCell.itemInfo.text
         productPage.discrip.prodLabel.text = "\(discriptionList[indexPath.row])\n\n\nIncludes:\n\(includeList[0])"
         present(productPage, animated: true, completion: nil)

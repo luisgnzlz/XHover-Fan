@@ -10,38 +10,41 @@ import MapKit
 import CoreLocation
 import AVFoundation
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let mapView = MKMapView()
     
+    var steps: [MKRoute.Step] = []
+    var stepCounter = 0
+    var route: MKRoute?
+    var showMapRoute = false
+    var navigationStarted = false
+    var locaitondistance: Double = 500
+    
+    var speechsynthesizer = AVSpeechSynthesizer()
+    
+    lazy var locationManager: CLLocationManager = {
+        let locationManger = CLLocationManager()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManger.delegate = self
+            locationManger.desiredAccuracy = kCLLocationAccuracyBest
+            handleAuthorizationStatus(locationManger: locationManger, status: CLLocationManager.authorizationStatus())
+        }
+        return locationManger
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        var steps: [MKRoute.Step] = []
-        var stepCounter = 0
-        var route: MKRoute?
-        var showMapRoute = false
-        var navigationStarted = false
-        var locationDistance: Double = 500
-        
-        var speechSynth = AVSpeechSynthesizer()
-        
-        lazy var locationManager: CLLocationManager()
-        
-        mapView.mapType = MKMapType.standard
-        mapView.isZoomEnabled = true
-        mapView.isScrollEnabled = true
-        
-        setUpView()
-        
-        // Or, if needed, we can position map in the center of the view
-        mapView.center = view.center
+      
     }
-    
+   
     func setUpView() {
         view.addConstrainedSubviews(mapView)
         
@@ -52,5 +55,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             mapView.widthAnchor.constraint(equalTo: view.widthAnchor),
         ])
     }
+    
+    fileprivate func handleAuthorizationStatus(locationManger: CLLocationManager, status: CLAuthorizationStatus) {
+        
+    }
+    
+
+}
+
+extension ViewController: CLLocationManagerDelegate {
     
 }

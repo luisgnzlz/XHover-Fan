@@ -21,6 +21,7 @@
 		AA485A1D26BCB546009B382A /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA485A1C26BCB546009B382A /* HeaderCollectionReusableView.swift */; };
 		AA6E812E26B9FC570055FA33 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E812D26B9FC570055FA33 /* ProductsCollectionViewCell.swift */; };
 		AA70CE8626EBBB2E00D3E9BE /* TipsTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70CE8526EBBB2E00D3E9BE /* TipsTitleView.swift */; };
+		AA74D77E27207DCF00E8E8F5 /* testerMemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74D77D27207DCF00E8E8F5 /* testerMemeViewController.swift */; };
 		AA8454D326E2878700719948 /* goat.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8454D226E2878700719948 /* goat.png */; };
 		AA8454D526E28B6300719948 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8454D426E28B6300719948 /* UserInfo.swift */; };
 		AA8454D726E28B9500719948 /* ProgammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8454D626E28B9400719948 /* ProgammaticView.swift */; };
@@ -31,7 +32,6 @@
 		AAD3BFCF26E7D0F500B3F2CD /* InfoProd.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFCE26E7D0F500B3F2CD /* InfoProd.swift */; };
 		AAD3BFD126E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3BFD026E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift */; };
 		AAD64CA926E93AE400311F93 /* TipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD64CA826E93AE400311F93 /* TipsList.swift */; };
-		AAEB432526BB421300F390AB /* blaster3_2048x2048.gif in Resources */ = {isa = PBXBuildFile; fileRef = AAEB432426BB421300F390AB /* blaster3_2048x2048.gif */; };
 		AAF27CD226E12F5C00AFA62D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */; };
 		AAF27CD426E151B400AFA62D /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */; };
 		AAF27CD626E1520100AFA62D /* ProdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF27CD526E1520100AFA62D /* ProdInfo.swift */; };
@@ -76,6 +76,7 @@
 		AA485A1C26BCB546009B382A /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AA6E812D26B9FC570055FA33 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA70CE8526EBBB2E00D3E9BE /* TipsTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTitleView.swift; sourceTree = "<group>"; };
+		AA74D77D27207DCF00E8E8F5 /* testerMemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testerMemeViewController.swift; sourceTree = "<group>"; };
 		AA8454D226E2878700719948 /* goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goat.png; sourceTree = "<group>"; };
 		AA8454D426E28B6300719948 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		AA8454D626E28B9400719948 /* ProgammaticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgammaticView.swift; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		AAD3BFCE26E7D0F500B3F2CD /* InfoProd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProd.swift; sourceTree = "<group>"; };
 		AAD3BFD026E7EBD500B3F2CD /* RecentlyPurchasedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPurchasedCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAD64CA826E93AE400311F93 /* TipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsList.swift; sourceTree = "<group>"; };
-		AAEB432426BB421300F390AB /* blaster3_2048x2048.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = blaster3_2048x2048.gif; path = Assets.xcassets/frameBackground.dataset/blaster3_2048x2048.gif; sourceTree = "<group>"; };
 		AAF27CD126E12F5C00AFA62D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		AAF27CD326E151B400AFA62D /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		AAF27CD526E1520100AFA62D /* ProdInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdInfo.swift; sourceTree = "<group>"; };
@@ -148,7 +148,6 @@
 				AA3488CF2672FFFB00F317C1 /* SceneDelegate.swift */,
 				AA3488D62672FFFC00F317C1 /* Assets.xcassets */,
 				AA8454D226E2878700719948 /* goat.png */,
-				AAEB432426BB421300F390AB /* blaster3_2048x2048.gif */,
 				AA3488DB2672FFFC00F317C1 /* Info.plist */,
 				AA8454DA26E2922C00719948 /* Launch Screen.storyboard */,
 			);
@@ -211,6 +210,7 @@
 				AA1B6AFE26E1BF5100376CB8 /* MapViewController.swift */,
 				AA1B6B0026E1C09A00376CB8 /* TipsAndAdviceViewController.swift */,
 				AA1B6B0226E1C22D00376CB8 /* VideosViewController.swift */,
+				AA74D77D27207DCF00E8E8F5 /* testerMemeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,7 +321,6 @@
 				AA3488D72672FFFC00F317C1 /* Assets.xcassets in Resources */,
 				AA8454D326E2878700719948 /* goat.png in Resources */,
 				AA8454DB26E2922C00719948 /* Launch Screen.storyboard in Resources */,
-				AAEB432526BB421300F390AB /* blaster3_2048x2048.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +356,7 @@
 				AAF27CD226E12F5C00AFA62D /* UserInfoViewController.swift in Sources */,
 				AAF27CD626E1520100AFA62D /* ProdInfo.swift in Sources */,
 				AA3488CE2672FFFB00F317C1 /* AppDelegate.swift in Sources */,
+				AA74D77E27207DCF00E8E8F5 /* testerMemeViewController.swift in Sources */,
 				AAD3BFCF26E7D0F500B3F2CD /* InfoProd.swift in Sources */,
 				AA1B6AFF26E1BF5100376CB8 /* MapViewController.swift in Sources */,
 				AA485A1D26BCB546009B382A /* HeaderCollectionReusableView.swift in Sources */,
